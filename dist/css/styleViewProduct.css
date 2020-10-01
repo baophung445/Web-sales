@@ -1,0 +1,123 @@
+* {
+	box-sizing: border-box;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+
+.column {
+	float: left;
+	width: 120%;
+	padding: 10px;
+}
+
+/* Style the images inside the grid */
+
+.column img {
+	cursor: pointer;
+	opacity: .8;
+}
+
+.column img:hover {
+	opacity: 1;
+}
+
+/* Clear floats after the columns */
+
+.row1:after {
+	display: table;
+	clear: both;
+	content: '';
+}
+
+.item-rating li {
+	color: #fdd835 !important;
+}
+
+.add_to_cart {
+	justify-content: center !important;
+}
+
+.minus {
+	justify-content: center !important;
+}
+
+.plus {
+	justify-content: center !important;
+}
+
+.row1 {
+	display: inline-grid;
+	height: 100px;
+	transform: translateY(-10px);
+}
+
+/* The expanding image container */
+
+.container1 {
+	position: relative;
+	margin-left: 40px;
+}
+
+/* Expanding image text */
+
+#imgtext {
+	font-size: 20px;
+	position: absolute;
+	bottom: 15px;
+	left: 15px;
+	color: white;
+}
+
+/* Closable button inside the expanded image */
+
+.closebtn {
+	font-size: 35px;
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	cursor: pointer;
+	color: white;
+}
+
+.add1 {
+	font-weight: bolder;
+	height: 50px;
+	margin-left: 20px;
+	cursor: pointer;
+	transition: all .4s;
+	text-align: center;
+	color: white;
+	border-radius: 6px;
+	background: #2879fe;
+	flex-grow: 1;
+	justify-content: center;
+}
+
+.breadcrums {
+	font-size: 30px;
+	margin-bottom: 30px;
+	background: #f7f8fa;
+}
+
+.breadcrums h5 {
+	font-weight: normal;
+	line-height: 2.6;
+	padding: 0 10px;
+	color: #191919;
+}
+
+.breadcrums h5 a {
+	font-family: Poppins;
+	padding-right: 15px;
+	transition: all .4s;
+	color: #191919;
+}
+
+.breadcrums h5 a:hover {
+	color: #2879fe;
+}
+
+.breadcrums h5 span {
+	padding: 4px 6px 4px 10px;
+}
+

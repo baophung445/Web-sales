@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="dist/css/styleViewProduct.css">
+    <link rel="stylesheet" href="dist/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="dist/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/dist/fontawesome/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="header-1 ">
+                <div class="topbar-left">
+                    <div class="topbar-dropdown ">
+                        <div class="language-menu"><a href="" style="padding: 10px;" class="endlish"> ENGLISH <i
+                                    class="fas fa-angle-down"></i></a>
+                            <ul class="dropdown-ul">
+                                <li><a href="">German</a></li>
+                                <li><a href="">Dutch</a></li>
+                                <li><a href="">French</a></li>
+                                <li><a href="">Italian</a></li>
+                                <li><a href="">Japanese</a></li>
+                                <li> <a href="">Russian</a></li>
+                            </ul>
+                        </div>
+                        <div class="currency-menu"><a href="" style="padding: 10px;"> USA <i
+                                    class="fas fa-angle-down"></i></a>
+                            <ul class="dropdown-ul-2">
+                                <li><a href="">EUR</a></li>
+                                <li><a href="">INR</a></li>
+                                <li><a href="">GBP</a></li>
+                                <li><a href="">CAD</a></li>
+                                <li><a href="">AUD</a></li>
+                                <li> <a href="">JPY</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class=" topbar-txt">
+                        Free Shipping For All Orders Of $200
+                    </div>
+                </div>
+                <div class="topbar-right ">
+                    <div class="topbar-right-menu ">
+                        <div class="topbar-track"> <a href="">Track Your Order</a></div>
+                        <div class="topbar-new"> <a href=""><i class="far fa-envelope" style="margin-right: 5px;"></i>
+                                Newsletter</a></div>
+                    </div>
+                    <div class="topbar-right-icon">
+                        <div class="facebook-icon button"><i class="fab fa-facebook-f"></i></div>
+                        <div class="twitter-icon button"><i class="fab fa-twitter"></i></div>
+                        <div class="google-icon button"><i class="fab fa-google-plus-g"></i></div>
+                        <div class="instagram-icon button"><i class="fab fa-instagram"></i></div>
+                        <div class="linkedin-icon button"><i class="fab fa-linkedin-in"></i></div>
+                        <div class="email-icon button"><i class="fas fa-envelope"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container header-2 w">
+        <!-- Nút span -->
+        <!--<div class=""></div> -->
+        <div class="Search-products">
+            <div class="products">
+                <input type="text " class="search-item" placeholder="Search for Products...">
+                <button class="btn-search"> <i class="fas fa-search"> </i></button>
+            </div>
+        </div>
+        <div class="Logo"><img src="https://lorada.c-themes.com/cosmetics/wp-content/themes/lorada/images/logo.png"
+                alt="">
+        </div>
+        <div class="right-column">
+            <ul class="right-column-icon">
+                <div class="btn-user">
+                    <li><i class="far fa-user"></i></li>
+                </div>
+                <div class="btn-heart">
+                    <i class="far fa-heart"></i>
+                    <span class="fa-heart-span">0</span>
+                </div>
+                <!-- Total + price-->
+                <!-- <div class="btn-shopping">
+              <i class="fas fa-shopping-bag"></i>
+              <span class="fa-shopping">0</span>
+            </div> -->
+
+                <!-- Recommended For You Face Eye Cheek -->
+                <div class="cart2 btn-shopping" id="myBtn">
+                    <i class="fas fa-cart-plus"></i>
+                    <span class="quantity-item fa-shopping">0</span>
+                </div>
+
+                <div class="total1" id="myDiv2" style="display: none;">
+                    <p class="text-active" style="display: block;">No Product In The Cart</p>
+                    <div class="close-total1"></div>
+                    <ul class="cart-list modal" id="myModal">
+                        <!-- Load products-->
+                    </ul>
+                    <span class="total" id="total2" style="margin-right: 100px; display: none;">
+                        0 </span>
+
+                    <div class="col-xs-12" style="position: relative;">
+                        <input type="checkbox" class="items-agreeterm" id="item-agree1">
+                        <label for="item-agree1" class="noselect">I agree with the terms and conditions</label>
+                    </div>
+                    <div class="View-Cart">
+                        <a>VIEW CART</a>
+                    </div>
+                    <input type="submit" class="checkout" value="CHECKOUT" disabled="">
+                </div>
+
+            </ul>
+            <!-- Load product-->
+        </div>
+    </div>
+
+    <div class="container wo">
+        <ul class="menu" style="margin: 20px 15px 0 0;">
+            <li class="home lili  " style="color: #c33 !important;"> <i class="fas fa-home"> <span> <a
+                            href="http://localhost:3000">HOME</a> </span></i><i class="fas fa-angle-down"></i>
+                <div class="home-hover">
+                    <div class="home-hover-1">
+                        <div class="home-hover-item">
+                            <img src="/src/img/6.jpg" alt="">
+                            <h1>Default Shop</h1>
+                        </div>
+                        <div class="home-hover-item">
+                            <img src="/src/img/7.jpg" alt="">
+                            <h1>Organic</h1>
+                        </div>
+                        <div class="home-hover-item">
+                            <img src="/src/img/3.jpg" alt="">
+                            <h1>Simple Shop</h1>
+                        </div>
+                        <div class="home-hover-item">
+                            <img src="/src/img/4.jpg" alt="">
+                            <h1>Technology</h1>
+                        </div>
+                        <div class="home-hover-item">
+                            <img src="/src/img/5.jpg" alt="">
+                            <h1>Winery</h1>
+                        </div>
+                    </div>
+                    <div class="home-hover-1">
+                        <div class="home-hover-item">
+                            <img src="/src/img/8.jpg" alt="">
+                            <h1>Furniture</h1>
+                        </div>
+                        <div class="home-hover-item">
+                            <img src="/src/img/9.jpg" alt="">
+                            <h1>Fashion Classic</h1>
+                        </div>
+                        <div class="home-hover-item">
+                            <img src="/src/img/8.jpg" alt="">
+                            <h1>Fashion Modern</h1>
+                        </div>
+                        <div class="home-hover-item">
+                            <img src="/src/img/9.jpg" alt="">
+                            <h1>Fashion with Side</h1>
+                        </div>
+                        <div class="home-hover-item">
+                            <img src="/src/img/10.jpg" alt="">
+                            <h1>Jewelry</h1>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="shop lili"><i class="fas fa-shopping-bag"> <span>SHOP</span> </i></li>
+            <li class="blog lili"><i class="fas fa-book-open"> <span>BLOG</span> </i> <i class="fas fa-angle-down"></i>
+                <!-- Dropdown menu hover-->
+                <div class="hover-blog">
+                    <div class="blog-ul">
+                        <ul>
+                            <li class="blog-ul-1">BLOG LAYOUT</li>
+                            <li>With Sidebar</li>
+                            <li>List View</li>
+                            <li>Masonry View</li>
+                        </ul>
+                    </div>
+                    <div class="blog-ul">
+                        <ul>
+                            <li class="blog-ul-1">POST LAYOUT</li>
+                            <li>With Sidebar</li>
+                            <li>Default Post</li>
+                            <li>Backstretch Image</li>
+                        </ul>
+                    </div>
+                    <img src="/src/img/mau.webp" alt="">
+                </div>
+            </li>
+            <li class="about lili"><i class="far fa-address-card"><span>ABOUT</span> </i></li>
+            <li class="contact lili"><i class="fas fa-tags"> <span> CONTACT</span></i></li>
+        </ul>
+    </div>
+
+    <!-- Checkout name-->
+    <div class="page-title title-size-small color-scheme-dark text-center"
+        style="background-repeat: no-repeat;background-size: cover;background-position: center center;background-color: #f3f3f3;">
+        <div class="container">
+            <h1 class="entry-title">PRODUCTS FILTERS</h1>
+            <div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#"><a href="./index.html" rel="v:url"
+                    property="v:title">Home</a> / <span class="current">Filter</span></div>
+        </div>
+    </div>
+    <div class="woocommerce-form-coupon-toggle">
+        <div class="woocommerce-info">
+            <p>Have a coupon?</p> <a href="#" class="showcoupon">Click here to enter your code</a>
+        </div>
+    </div>
+
+    <!-- Product filter -->
+    <div class="filter-products">
+        <div class="container">
+            <div class="row">
+                <div class="filter-products-left col-lg-2">
+                    <div class="filter-category">
+                        <ul>
+                            <li class="Category">Category</li>
+                            <li class="Men filter">Men</li>
+                            <li class="SkinCare filter">SkinCare</li>
+                            <li class="Makeup filter">Makeup</li>
+                            <li class="Hair filter">Hair</li>
+                            <li class="Fragrance filter">Fragrance</li>
+                            <li class="ToolsBrushe filter">ToolsBrushe</li>
+                        </ul>
+                    </div>
+                    <select name="" id="hihi" class="filter-item">
+                        <option value="" class="filer-item1">Price</option>
+                        <option value="greater10"> >=40$ </option>
+                        <option value="lesser10"> =40$ </option>
+                    </select>
+                    <div class="filter-color">
+                        <ul>
+                            <li class="filter-color1">Color</li>
+                            <li class="color2"><i class="fas fa-circle" style="color: #222;"></i> <span> Blue</span>
+                            </li>
+                            <li class="color2"><i class="fas fa-circle" style="color: #a7ce7b;"></i> <span> Light
+                                    Green</span></li>
+                            <li class="color2"><i class="fas fa-circle" style="color: #aec6cf;"></i> <span> Pastel
+                                    Blue</span> </li>
+                            <li class="color2"><i class="fas fa-circle" style="color: #ffaab8;"></i> <span> Pink</span>
+                            </li>
+                            <li class="color2"><i class="fas fa-circle" style="color: #f3c122;"></i> <span>
+                                    Yellow</span> </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="filter-products-right col-lg-10">
+                    <div style="display: flex;">
+                        <div class="" style="margin-right: 10px;">Home >
+                        </div>
+                        <div class="filter-products-right-name"></div>
+                    </div>
+                    <div class=" row">
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <!--  footer-->
+    <div class="lorada-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-top-left">
+                    <div class="footer-name">
+                        <h2>Newsletter</h2>
+                    </div>
+                    <form action=""></form>
+                    <div class="footer-search">
+                        <input type="text " class="footer-search-input" placeholder="Enter your mail address...">
+                        <div class="footer-search-input2"><button class="footer-search-btn"> SUBCRIBE</button></div>
+                    </div>
+
+
+                </div>
+                <div class="footer-top-right">
+                    <div>
+                        <h4> Follow Us:</h4>
+                    </div>
+                    <div> <a class="footer-right-icon" href=""><i class="fab fa-facebook-f"></i> </a></div>
+                    <div> <a class="footer-right-icon" href=""><i class="fab fa-twitter"></i> </a></div>
+                    <div><a class="footer-right-icon" href=""><i class="fab fa-pinterest-p"></i> </a></div>
+                    <div><a class="footer-right-icon" href=""><i class="fab fa-google-plus-g"></i> </a></div>
+                    <div> <a class="footer-right-icon" href=""> <i class="fab fa-instagram-square"></i></a></div>
+                    <div> <a class="footer-right-icon" href=""><i class="fab fa-youtube"></i> </a></div>
+                </div>
+            </div>
+            <div class=" footer-bottom">
+                <div class="row" style="display: flex;
+            justify-content: space-between;
+            color: #999;margin: unset;">
+                    <div class="FindItFast col-xs-12 col-sm-12 col-md-3 col-xl-3">
+                        <ul>
+                            <li class="FindItFast-center"> Find It Fast</li>
+                            <li> <a href="">Foundation</a> </li>
+                            <li> <a href="">BB &amp;&amp; CC Cream</a> </li>
+                            <li> <a href="">Tinted Moisturizer</a> </li>
+                            <li> <a href=""> Concealer</a></li>
+                            <li> <a href="">Face Primer</a> </li>
+                            <li> <a href="">Setting Spray &amp; Powder</a> </li>
+                            <li> <a href=""> Color Correct</a></li>
+                            <li> <a href=""> Contour</a></li>
+                            <li> <a href="">Highlighte</a> </li>
+                        </ul>
+                    </div>
+                    <div class="Find col-xs-12 col-sm-12 col-md-3 col-xl-3">
+                        <ul>
+                            <li></li>
+                            <li class="FindItFast-center">Eye Palettes</li>
+                            <li> <a href="">Mascara</a> </li>
+                            <li><a href="">Eyeliner</a> </li>
+                            <li> <a href=""> Eyebrow</a></li>
+                            <li><a href="">Eyeshadow</a> </li>
+                            <li><a href="">Eye Primer</a> </li>
+                            <li><a href="">Under-Eye Concealer</a> </li>
+                            <li> <a href=""> False Eyelashes</a></li>
+                            <li><a href="">Eye Sets</a> </li>
+                        </ul>
+                    </div>
+                    <div class="MyAccount col-xs-12 col-sm-12 col-md-3 col-xl-3">
+                        <ul>
+                            <li class="FindItFast-center">My Account</li>
+                            <li> <a href="">My Account</a> </li>
+                            <li><a href="">My Wishlist</a> </li>
+                            <li><a href="">Compare Products</a> </li>
+                            <li><a href=""> Discount</a></li>
+                            <li><a href="">Track Order</a> </li>
+                            <li><a href="">Shop</a> </li>
+                            <li><a href="">About Us</a> </li>
+                            <li><a href=""> Returns/Exchange</a></li>
+                            <li><a href=""> FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="ContactUs col-xs-12 col-sm-12 col-md-3 col-xl-3">
+                        <ul>
+                            <li class="FindItFast-center">Contact Us</li>
+                            <li> <a href=""><i class="fas fa-headphones-alt" style="color: #c33;
+                    font-size: 18px;margin-right: 7px"></i> <span>Got Question? Call Us 24/7!</span></a> </li>
+                            <li> <a href="" class="hihi">(364) 106 7572 <span> or</span> (052) 611 5711</a> </li>
+                            <li> <a href=""> <i class="fas fa-building" style="color: #c33;
+                    font-size: 18px;margin-right: 7px"></i> <span>3801 Chalk Butte Rd, Cutbank,
+                                        Montana,USA</span></a> </li>
+                            <li> <a href=""><i class="fas fa-id-card-alt " style="color: #c33;
+                    font-size: 18px;margin-right: 7px"></i><span>contact@lorada.com</span> </a> </li>
+                            <li> <a href=""><i class="fas fa-clock" style="color: #c33;
+                    font-size: 18px;margin-right: 7px"></i> <span>Work time: </span> </a> </li>
+                            <li> <a href="" class="hihu">Mon - Sat: 9:00AM -6:00PM | Sunday: Closed</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer-end">
+        <div class="container">
+            <div class="footer-end-bottom"></div>
+            <div class="ahihi">
+                <div class="footer-end-left"> <a href=""> © 2019 Lorada. All Rights Reserved.</a> </div>
+                <div class="footer-end-right"><img src="/src/img/Logo Slide/8.PNG" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="back-to-top" style="display: block;">
+        <a href="#" id="btn-totop">
+            <i class="fa fa-angle-up"></i>
+        </a>
+    </div>
+
+
+    <!--  JSS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="dist/js/owl.carousel.min.js"> </script>
+    <script src="/src/js/products-view.js"> </script>
+    <script src="/src/js/Filter.js"> </script>
+
+
+</body>
+
+</html>

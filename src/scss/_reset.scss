@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    list-style: none;
+   // color: black;
+}
+ul{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+    //color:white;
+}
+input,
+button{
+    list-style: none;
+    background: none;
+    outline: none;
+}
+div {
+    display: block;
+}
